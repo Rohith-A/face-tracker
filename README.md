@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# FaceMesh + Expression Detection (React + ml5.js + p5.js)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web-based face tracking and expression detection application built with **React**, **ml5.js**, and **p5.js**.
 
-## Available Scripts
+## 🔍 Features
+- Real-time webcam-based face tracking
+- Face mesh rendering (468 landmarks)
+- Expression detection (Smiling, Surprised, Sad, Neutral)
+- Captured face rendering with solid face shape
+- Responsive canvas layout
 
-In the project directory, you can run:
+## ⚙️ Tech Stack
+- **React**: Frontend UI
+- **p5.js**: Canvas rendering and interactivity
+- **ml5.js**: FaceMesh model (MediaPipe-based)
 
-### `npm start`
+## 🚀 Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/face-mesh-emotion.git
+cd face-mesh-emotion
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-### `npm test`
+### 3. Start the Development Server
+```bash
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 4. Open in Browser
+Go to: `http://localhost:3000`
 
-### `npm run build`
+## 🧠 How It Works
+- Captures video from the webcam.
+- Detects facial landmarks using `ml5.facemesh()`.
+- Draws landmarks on the video feed.
+- Press `c` to capture the current face mesh.
+- Captured face mesh is rendered on the right side.
+- Expression is detected based on geometry of facial points.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📸 Key Controls
+| Key | Action |
+|-----|--------|
+| `c` | Capture the current face mesh |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📦 External Libraries
+- [ml5.js](https://ml5js.org/)
+- [p5.js](https://p5js.org/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📄 License
+MIT License
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with 💚 using ml5.js + p5.js + React
